@@ -17,6 +17,7 @@ body {
   border: 1px solid rgb(43, 197, 43);
   width: 90%;
   max-width: 800px;
+  padding: 10px;
 }
 
 .openinghours__overview {
@@ -36,6 +37,14 @@ h3 {
 
 .openinghours__table {
   width: 100%;
+  font-size: 14px;
+  border-collapse: collapse;
+}
+
+.openinghours__table .today {
+  background-color: rgb(43, 197, 43);
+  color: white;
+  font-weight: 500;
 }
 
 .openinghours__table td {
