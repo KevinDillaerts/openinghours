@@ -14,27 +14,22 @@ const isToday = (date, index) =>
     : `<tr>${isHoliday(date, index)}</tr>`;
 
 const holidays = [
-  "maandag 5 april",
-  "Paasmaandag",
-  "zaterdag 1 mei",
-  "Feest v/d arbeid",
-  "donderdag 13 mei",
-  "OLH Hemelvaart",
-  "maandag 24 mei",
-  "Pinkstermaandag",
-  "woensdag 21 juli",
-  "Nat. feestdag",
-  "maandag 1 november",
-  "Allerheiligen",
-  "donderdag 11 november",
-  "Wapenstilstand",
-  "zaterdag 25 december",
-  "Kerstmis",
+  { day: "maandag 5 april", name: "Paasmaandag" },
+  { day: "zaterdag 1 mei", name: "Feest v/d arbeid" },
+  { day: "donderdag 13 mei", name: "OLH Hemelvaart" },
+  { day: "maandag 24 mei", name: "Pinkstermaandag" },
+  { day: "woensdag 21 juli", name: "Nat. feestdag" },
+  { day: "maandag 1 november", name: "Allerheiligen" },
+  { day: "donderdag 11 november", name: "Wapenstilstand" },
+  { day: "zaterdag 25 december", name: "Kerstmis" },
 ];
-const isHoliday = (day, index) =>
-  holidays.includes(day)
-    ? `<td> ${day} </td><td>Gesloten</td><td> ${holidays[holidays.indexOf(day) + 1]}</td>`
-    : `<td> ${day} </td> ${hours[index]}</td>`;
+
+const isHoliday = (date, index) => {
+  const holiday = holidays.find((el) => el.day === date);
+  return holiday
+    ? `<td> ${date} </td><td>Gesloten</td><td>${holiday.name}</td>`
+    : `<td> ${date} </td> ${hours[index]}</td>`;
+};
 
 const thisWeek = [];
 const nextWeek = [];
