@@ -55,18 +55,13 @@ h3 {
   .openinghours__overview {
     flex-direction: column;
   }
-
-  .openinghours__week {
+  .openinghours__overview__week {
     width: 100%;
   }
-
-  .openinghours__table {
+  .openinghours__overview__table {
     margin-bottom: 1rem;
   }
-
-  .openinghours__table tr td,
-.openinghours__table tr td:nth-child(2),
-.openinghours__table tr td:nth-child(3) {
+  .openinghours__overview__table tr td, .openinghours__overview__table tr td:nth-child(2), .openinghours__overview__table tr td:nth-child(3) {
     text-align: start;
   }
 }
