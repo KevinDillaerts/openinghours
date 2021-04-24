@@ -13,47 +13,40 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.openinghours {
-  border: 1px solid rgb(43, 197, 43);
-  width: 90%;
-  max-width: 800px;
-  padding: 10px;
-}
-
-.openinghours__overview {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.openinghours__week {
-  width: calc(50% - 30px);
-}
-
 h2,
 h3 {
   margin-bottom: 1em;
 }
 
+.openinghours {
+  border: 1px solid #2bc52b;
+  width: 90%;
+  max-width: 800px;
+  padding: 10px;
+}
+.openinghours__overview {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.openinghours__week {
+  width: calc(50% - 30px);
+}
 .openinghours__table {
   width: 100%;
   font-size: 14px;
   border-collapse: collapse;
 }
-
 .openinghours__table .today {
-  color: rgb(43, 197, 43);
+  color: #2bc52b;
   font-weight: bold;
 }
-
 .openinghours__table td {
   padding: 3px;
 }
-
 .openinghours__table tr td:nth-child(2) {
   text-align: center;
 }
-
 .openinghours__table tr td:nth-child(3) {
   text-align: right;
 }
@@ -62,19 +55,21 @@ h3 {
   .openinghours__overview {
     flex-direction: column;
   }
+
   .openinghours__week {
     width: 100%;
   }
+
   .openinghours__table {
     margin-bottom: 1rem;
   }
+
   .openinghours__table tr td,
-  .openinghours__table tr td:nth-child(2),
-  .openinghours__table tr td:nth-child(3) {
+.openinghours__table tr td:nth-child(2),
+.openinghours__table tr td:nth-child(3) {
     text-align: start;
   }
 }
-
 @media screen and (max-width: 450px) {
   .openinghours__table {
     font-size: 12px;
