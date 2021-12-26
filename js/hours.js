@@ -14,14 +14,14 @@ const isToday = (date, index) =>
     : `<tr>${isHoliday(date, index)}</tr>`;
 
 const holidays = [
-  { day: "maandag 5 april", name: "Paasmaandag" },
-  { day: "zaterdag 1 mei", name: "Feest v/d arbeid" },
-  { day: "donderdag 13 mei", name: "OLH Hemelvaart" },
-  { day: "maandag 24 mei", name: "Pinkstermaandag" },
-  { day: "woensdag 21 juli", name: "Nat. feestdag" },
-  { day: "maandag 1 november", name: "Allerheiligen" },
-  { day: "donderdag 11 november", name: "Wapenstilstand" },
-  { day: "zaterdag 25 december", name: "Kerstmis" },
+  { day: "zaterdag 1 januari", name: "Nieuwjaar" },
+  { day: "maandag 18 april", name: "Paasmaandag" },
+  { day: "donderdag 26 mei", name: "OLH Hemelvaart" },
+  { day: "maandag 6 juni", name: "Pinkstermaandag" },
+  { day: "donderdag 21 juli", name: "Nat. feestdag" },
+  { day: "maandag 15 augustus", name: "OLV Hemelvaart" },
+  { day: "dinsdag 1 november", name: "Allerheiligen" },
+  { day: "vrijdag 11 november", name: "Wapenstilstand" },
 ];
 
 const isHoliday = (date, index) => {
